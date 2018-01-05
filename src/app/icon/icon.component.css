@@ -1,0 +1,43 @@
+table {
+    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+
+    animation: colorchange 3s ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+
+    -webkit-animation: colorchange 3s ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    /* Chrome and Safari */
+    color: white;
+
+}
+
+@keyframes colorchange {
+  0% {
+    background: #78b9ff;
+  }
+  50% {
+    background: #007bff;
+  }
+  100% {
+    background: #78b9ff;
+  }
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    background: #78b9ff;
+  }
+  50% {
+    background: #007bff;
+  }
+  100% {
+    background: #78b9ff;
+  }
+}
